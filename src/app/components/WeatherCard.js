@@ -1,5 +1,7 @@
 "use client"
-import styles from "./WeatherCard.module.css"
+import styles from "./WeatherCard.module.css";
+import Header from "./Header";
+import WeatherIcon from "./WeatherIcon";
 
 const WeatherCard = ({
     cityName, 
@@ -11,13 +13,18 @@ const WeatherCard = ({
     humidity,
     windSpeed,
 }) => (
-    <div className={styles.WeatherCardWrapper}>
+    <div className={styles.WeatherCardWrapper}
+    /* style={{ backgroundColor: `rgba(0,0,0,0.${cloudiness}`}}*/> 
+        <div className={styles.WeatherCardImage}>
+            <WeatherIcon weatherType={weatherType} />
+        </div>
+
         <h2>{cityName}</h2>
 
         <p>Weather Type: {weatherType} </p>
-        <p>Current Temperature: {currentTemparature} °C</p>
-        <p>High Temperature: {highTemperature} °C</p>
-        <p>Low Temperature: {lowTemperature} °C</p>
+        <p>Current Temperature: {currentTemparature} °F</p>
+        <p>High Temperature: {highTemperature} °F</p>
+        <p>Low Temperature: {lowTemperature} °F</p>
         <p>Cloudiness: {cloudiness}</p>
         <p>Humidity: {humidity}</p>
         <p>Wind Speed: {windSpeed}</p>

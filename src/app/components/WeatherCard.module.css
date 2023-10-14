@@ -1,0 +1,18 @@
+.WeatherCardWrapper {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    padding: 40px 80px;
+}
+
+.WeatherCardImage {
+    height: auto;
+    width: 120px;
+}
+
+.WeatherCardImage svg {
+    height: 40px;
+    padding: 20px;
+    width: 100%;
+}
