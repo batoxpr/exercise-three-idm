@@ -7,10 +7,10 @@ const WeatherCard = ({
     cityName, 
     cloudiness,
     currentTemparature,
-    weatherType,
     highTemperature,
-    lowTemperature,
     humidity,
+    lowTemperature,
+    weatherType,
     windSpeed,
 }) => (
     <div className={styles.WeatherCardWrapper}
@@ -20,7 +20,6 @@ const WeatherCard = ({
         </div>
 
         <h2>{cityName}</h2>
-
         <p>Weather Type: {weatherType} </p>
         <p>Current Temperature: {currentTemparature} °F</p>
         <p>High Temperature: {highTemperature} °F</p>

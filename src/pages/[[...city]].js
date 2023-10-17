@@ -4,7 +4,7 @@ import "../app/globals.css";
 import styles from "@/app/components/WeatherCard.module.css"
 
 export async function getStaticProps({ params }) {
-    const city = (params && params.city) || "Boston";
+    const city = (params && params.city) || "New York";
       const res = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_API_KEY}&units=imperial`
     );

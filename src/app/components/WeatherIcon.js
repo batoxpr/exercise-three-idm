@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faBolt,
     faCloud,
-    faUmbrella,
+    faCloudRain,
+    faDroplet,
     faSnowflake,
     faSun,
-    faDroplet,
-    faCloudRain,
+    faUmbrella,
     faWater,
 } from "@fortawesome/free-solid-svg-icons";
 
